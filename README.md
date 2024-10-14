@@ -71,11 +71,11 @@ This will fetch data from the GitHub repository and generate a JSON file contain
 The output JSON file can be used to train the chatbot, ensuring that it is equipped with up-to-date information about Fluent Design.
 
 ## Tech Stack
-***Android (Java/Kotlin)***: For developing the core chatbot application.
-***FluentUI Library***: To implement Fluent's design principles.
-***Python***: For creating the Dataset Creator Tool.
-***GitHub***: As the data source for training datasets.
-***Microsoft Copilot Studio***: For crafting chatbot prompts and response mechanisms.
+1. **Android (Java/Kotlin)**: For developing the core chatbot application.
+2. **FluentUI Library**: To implement Fluent's design principles.
+3. **Python**: For creating the Dataset Creator Tool.
+4. **GitHub**: As the data source for training datasets.
+5. **Microsoft Copilot Studio**: For crafting chatbot prompts and response mechanisms.
 
 
 ## Contributing
