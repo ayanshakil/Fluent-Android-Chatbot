@@ -1,3 +1,4 @@
+
 # Fluent Android Chatbot
 
 ## Overview
@@ -77,6 +78,10 @@ The output JSON file can be used to train the chatbot, ensuring that it is equip
 4. **GitHub**: As the data source for training datasets.
 5. **Microsoft Copilot Studio**: For crafting chatbot prompts and response mechanisms.
 
+## ScreenShots: 
+![Screenshot 2024-10-15 035435](https://github.com/user-attachments/assets/841e550b-caae-422d-bf6f-ce871cb9f14a)
+![Screenshot 2024-10-15 035423](https://github.com/user-attachments/assets/b50e56d4-25b7-41d6-97fb-347fa3dbbd37)
+![Screenshot 2024-10-15 035409](https://github.com/user-attachments/assets/ecd284b3-f543-41e5-bb16-dd8c8cd95779)
 
 ## Contributing
 We welcome contributions! If you would like to contribute, please fork the repository and create a pull request. Make sure your changes align with the project goals.
