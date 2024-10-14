@@ -79,9 +79,12 @@ The output JSON file can be used to train the chatbot, ensuring that it is equip
 5. **Microsoft Copilot Studio**: For crafting chatbot prompts and response mechanisms.
 
 ## ScreenShots: 
-![Screenshot 2024-10-15 035435](https://github.com/user-attachments/assets/841e550b-caae-422d-bf6f-ce871cb9f14a)
-![Screenshot 2024-10-15 035423](https://github.com/user-attachments/assets/b50e56d4-25b7-41d6-97fb-347fa3dbbd37)
-![Screenshot 2024-10-15 035409](https://github.com/user-attachments/assets/ecd284b3-f543-41e5-bb16-dd8c8cd95779)
+![Screenshot 2024-10-15 050225](https://github.com/user-attachments/assets/0bd49747-a88e-4c1c-9605-69be8feeaa93)
+![Screenshot 2024-10-15 045927](https://github.com/user-attachments/assets/fec9b69b-187b-4ddb-8f09-9d611b85c67e)
+![Screenshot 2024-10-15 050213](https://github.com/user-attachments/assets/fbf2b45c-7744-44b4-8c14-4d33a1b64141)
+![Screenshot 2024-10-15 050156](https://github.com/user-attachments/assets/239d4c48-6497-4b15-88a7-14f580ee7fea)
+
+
 
 ## Contributing
 We welcome contributions! If you would like to contribute, please fork the repository and create a pull request. Make sure your changes align with the project goals.
