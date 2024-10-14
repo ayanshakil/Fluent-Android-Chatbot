@@ -1,3 +1,4 @@
+/* Global Styling */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,8 +7,26 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* Dark Mode Toggle Container */
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#toggle-text {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Container for Page Content */
 .container {
     display: flex;
     flex-direction: column;
@@ -41,6 +60,7 @@ p {
     text-align: center;
 }
 
+/* Iframe Styling */
 iframe {
     border: 2px solid #66E2D5;
     border-radius: 10px;
@@ -48,8 +68,10 @@ iframe {
     height: 650px;
     background-color: #2d2d2d;
     margin: 20px 0;
+    display: none; /* Initially hidden */
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     color: #888;
@@ -58,15 +80,97 @@ footer {
     border-top: 1px solid #333;
 }
 
-.chatbot-info {
-    text-align: center;
-    font-size: 0.85rem; /* Adjusted font size */
-    color: #ccc;
-    margin: 20px 0;
-    width: 80%; /* Adjusted width */
+/* Dark Mode */
+.dark-mode {
+    background-color: #f3f3f3;
+    color: #1e1e1e;
 }
 
-.description-title {
-    font-weight: bold; /* Makes the "Description" label stand out */
-    margin-bottom: 10px; /* Adds spacing below the title */
+.dark-mode h1 {
+    color: #0078d7;
+}
+
+.dark-mode iframe {
+    background-color: #e0e0e0;
+}
+
+/* Floating Chat Button */
+.floating-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #66E2D5;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Spinner for loading */
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #66E2D5;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #66E2D5;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
 }
