@@ -174,3 +174,10 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+/* Chatbot Description Styling */
+.chatbot-description {
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+    margin-bottom: 20px;
+}
