@@ -32,8 +32,8 @@ def create_dataset(snippets):
 
 # Main execution
 if __name__ == "__main__":
-    owner = 'ayanshakil'  # Replace with your GitHub username
-    repo_name = 'fluent-UI'  # Replace with your GitHub repository name
+    owner = 'user_name'  # Replace with your GitHub username
+    repo_name = 'repo_name'  # Replace with your GitHub repository name
     repo_url = f'https://github.com/{owner}/{repo_name}.git'
     
     # Clone the repository
