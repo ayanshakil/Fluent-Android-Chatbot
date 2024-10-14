@@ -1,42 +1,90 @@
-  # Fluent Android Copilot Chatbot
+# Fluent Android Chatbot
 
-Welcome to the **Fluent Android Copilot Chatbot** project! This chatbot is designed to assist users with queries related to Fluent2 UI components in Android using Jetpack Compose. It provides concise and informative responses, making it a valuable resource for developers working with Fluent UI.
+## Overview
 
----
+This project focuses on building a custom Android chatbot integrated with Microsoft's Fluent Design System. The chatbot is designed to answer queries related to Fluent, leveraging AI-based prompt engineering techniques. Additionally, the repository includes a **Dataset Creator Tool** that fetches data from a GitHub repository and creates a JSON file, which can be used as a training dataset for the chatbot.
 
 ## Table of Contents
-
-- [Introduction](#introduction)
-- [How to Create the Chatbot](#how-to-create-the-chatbot)
-- [Python Tool for Dataset Creation](#python-tool-for-dataset-creation)
-- [Technologies Used](#technologies-used)
-- [Installation and Setup](#installation-and-setup)
-- [Running the Project](#running-the-project)
+- [Introduction to Fluent Design](#introduction-to-fluent-design)
+- [Chatbot Functionality](#chatbot-functionality)
+- [Dataset Creator Tool](#dataset-creator-tool)
+  - [How the Training Dataset is Created](#how-the-training-dataset-is-created)
+  - [Usage](#usage)
+- [Tech Stack](#tech-stack)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ---
 
-## Introduction
+## Introduction to Fluent Design
 
-The **Fluent Android Copilot Chatbot** helps Android developers with precise information and examples regarding Fluent2 UI components, using the modern Jetpack Compose syntax. It answers questions concisely, offers code snippets, and links to official documentation for further insights. The chatbot UI adheres to Fluent2 design principles, ensuring a consistent and professional look across Android projects. 
+Fluent Design is Microsoft's design system aimed at creating intuitive, engaging, and beautiful user experiences across devices and platforms. The system is built around five key principles:
 
-The chatbot is hosted using GitHub Pages and is powered by Fluent2 design, with clean and dark-themed styling.
+1. **Light**: Creates depth and guides users' attention with shadowing and lighting techniques.
+2. **Depth**: Enhances the 3D feel of the UI by introducing layers and shadow effects.
+3. **Motion**: Adds fluidity and interactivity to the UI, ensuring smooth transitions between states.
+4. **Material**: Provides a natural and tactile experience through intuitive interactions.
+5. **Scale**: Ensures consistent design across multiple platforms and devices.
 
----
+The FluentUI library provides components and styles based on these principles, and the Fluent Android Chatbot follows these guidelines to create a visually consistent user experience.
 
-## How to Create the Chatbot
+## Chatbot Functionality
 
-To create your own **Fluent Android Copilot Chatbot**, follow these steps:
+The Fluent Android Chatbot is a custom-built bot that helps users understand and interact with Microsoft's Fluent Design. Here’s how it works:
 
-1. **Design the UI**: 
-   - Build the HTML, CSS, and JavaScript files for the chatbot's interface.
-   - Use Fluent2 design principles for colors, typography, and layout.
-
-2. **Integrate the Chatbot**: 
-   - Embed the chatbot service into your HTML file using an iframe.
+1. **User Queries**: Users can ask the chatbot questions related to Fluent Design, such as "What are Fluent Design principles?" or "How do I implement depth in my Android app?"
    
-   Example:
-   ```html
-   <iframe src="https://copilotstudio.microsoft.com/..." frameborder="0"></iframe>
+2. **Natural Language Processing**: The chatbot uses custom AI prompts designed with **Microsoft Copilot Studio**. It processes these queries and provides accurate and contextually relevant responses.
+
+3. **Response Generation**: Based on the training data and the prompt design, the bot responds with detailed answers. It is capable of handling both basic and complex questions about Fluent design, UI elements, and design patterns.
+
+4. **Continuous Learning**: The chatbot’s knowledge can be expanded by training it with additional data using the Dataset Creator Tool, allowing for continuous improvements.
+
+## Dataset Creator Tool
+
+The **Dataset Creator Tool** is a Python-based utility that automates the process of creating a training dataset for the chatbot. It pulls data from a GitHub repository and generates a JSON file that can be used to train the bot.
+
+### How the Training Dataset is Created
+
+1. **Data Fetching**: The tool is configured to fetch relevant data from a specified GitHub repository. The data includes structured question-answer pairs related to Fluent Design concepts.
+
+2. **Data Processing**: The fetched data is processed and structured into JSON format. The tool organizes the data into a format that can be used to train the chatbot’s machine learning model.
+
+3. **Output**: The final JSON file contains a collection of questions and corresponding answers, which serve as the training dataset for the chatbot.
+
+The Python tool ensures that the dataset remains up-to-date by pulling the latest information from the GitHub repository, allowing the bot to provide more accurate and comprehensive answers.
+
+### Usage
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/ayanshakil/Fluent-Android-Chatbot.git
+   cd Fluent-Android-Chatbot
+2. **Navigate to the Dataset Creator Tool**:
+   ```bash
+   cd dataset-creator-tool
+3. **Run the Python Tool**:
+   ```bash
+   python dataset_creator.py
+This will fetch data from the GitHub repository and generate a JSON file containing the training data.
+4. **Use the Generated JSON**: 
+The output JSON file can be used to train the chatbot, ensuring that it is equipped with up-to-date information about Fluent Design.
+
+## Tech Stack
+***Android (Java/Kotlin)***: For developing the core chatbot application.
+***FluentUI Library***: To implement Fluent's design principles.
+***Python***: For creating the Dataset Creator Tool.
+***GitHub***: As the data source for training datasets.
+***Microsoft Copilot Studio***: For crafting chatbot prompts and response mechanisms.
+
+
+## Contributing
+We welcome contributions! If you would like to contribute, please fork the repository and create a pull request. Make sure your changes align with the project goals.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
+
+
