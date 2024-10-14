@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    margin-right: 20px;
+    filter: drop-shadow(0 0 10px #66E2D5);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #66E2D5;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ccc;
+    text-align: center;
+}
+
+iframe {
+    border: 2px solid #66E2D5;
+    border-radius: 10px;
+    width: 60%;
+    height: 650px;
+    background-color: #2d2d2d;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+.chatbot-info {
+    text-align: center;
+    font-size: 0.85rem; /* Adjusted font size */
+    color: #ccc;
+    margin: 20px 0;
+    width: 80%; /* Adjusted width */
+}
+
+.description-title {
+    font-weight: bold; /* Makes the "Description" label stand out */
+    margin-bottom: 10px; /* Adds spacing below the title */
+}
