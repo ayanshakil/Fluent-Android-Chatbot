@@ -54,10 +54,16 @@ h1 {
     color: #66E2D5;
 }
 
+/* General paragraph styling */
 p {
     font-size: 1.2rem;
     color: #ccc;
     text-align: center;
+}
+
+/* Top statement in light theme */
+.dark-mode p {
+    color: #1e1e1e; /* Dark black color in light mode */
 }
 
 /* Iframe Styling */
@@ -176,8 +182,13 @@ input:checked + .slider:before {
 }
 /* Chatbot Description Styling */
 .chatbot-description {
-    font-size: 1rem;
-    color: #888;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #888; /* Same color as footer for dark theme */
     text-align: center;
     margin-bottom: 20px;
+}
+
+/* Light theme description color */
+.dark-mode .chatbot-description {
+    color: #1e1e1e; /* Dark black color in light mode */
 }
